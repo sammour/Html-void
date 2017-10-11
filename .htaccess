@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^lang/(.+)/(.+)$  index.php?mod=lang&lang=$1&url=$2 [L]
+RewriteRule ^(.+)/(.+)/(.+)/(.+).html$  index.php?mod=$1&var=$2&svar=$3&tvar=$4 [L]
+RewriteRule ^(.+)/(.+)/(.+).html$  index.php?mod=$1&var=$2&svar=$3 [L]
+RewriteRule ^(.+)/(.+).html$  index.php?mod=$1&var=$2 [L]
+RewriteRule ^(.+).html$ index.php?mod=$1 [L]

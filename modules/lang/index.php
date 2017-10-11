@@ -1,0 +1,1 @@
+<?phpif (isset($_GET['var']) && in_array($_GET['var'], array("en", "fr", "cn", "de", "it", "jp", "ko", "ru", "ar", "sp", "th"))) {	$_SESSION['lang'] = $_GET['var'];}header('Location: ../index.php');?>
